@@ -1,0 +1,21 @@
+git config --global user 111119118
+git config --global user.email contact.SHAIK-AKSAR.BANU@CAPGEMINI.COM
+git init
+touch index.html
+git status
+git add index.html
+git commit
+touch info.txt
+git status
+touch .gitignore & Put *.txt in the file
+git status
+git add index.html
+git commit -m "made some changes in index file"
+git log
+git checkout index.html
+git add index.html
+git checkout index.html
+git config --global alias.my-add add
+git my-add index.html
+git commit -m "modified index file for my add command"
+git reset --soft Head~1

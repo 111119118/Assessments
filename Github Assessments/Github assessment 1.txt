@@ -1,0 +1,35 @@
+# test1
+add test1 mkdir Assignments
+2 .cd Assignments/
+3 .touch README.txt
+4 .git add -A
+5 .git commit -m "commiting README file"
+6 .git branch html-assignments
+7 .git checkout html-assignments
+8 .cp ../Project_dir/index.html ../Project_dir/Assignments/
+9 .git add -A
+10 .git commit -m "commit copy file in html branch"
+11 .git commit -a -m "commiting index copy changes in html assignment"
+12 .git checkout master
+13 .git add -A
+14 .git commit -m "commint changes in master"
+15 .git checkout html-assignments
+16 .git add -A
+17 .git commit -m "final commit in html branch modified index"
+18 .git checkout master
+19 .git merge html-assignments
+20 .git branch -d html-assignments
+git branch css-assignments
+git checkout css-assignments
+git add -A
+git commit -m "commit copy file in css branch"
+git commit -a -m "commiting index copy changes in css assignment"
+git checkout master
+git add -A
+git commit -m "commit changes in master"
+git checkout css-assignments
+git add -A
+git commit -m "final commit in css branch modified cssfile"
+git checkout master
+git merge css-assignments
+git branch
